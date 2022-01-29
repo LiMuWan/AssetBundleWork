@@ -74,7 +74,7 @@ public class LoadAssets : MonoBehaviour
         //它会一圈一圈的跑，每次执行到协同的时候，都会调用一下我们的协同程序
         //而yield 的会返回当前帧，下一次执行过来的时候会从当前协同上次yield的
         //下一句执行
-        StartCoroutine(DownloadAndLoad());
+        //Load();
     }
 
     /// <summary>
