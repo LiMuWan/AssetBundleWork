@@ -24,7 +24,7 @@ public class LoadAssets : MonoBehaviour
             PlayerPrefs.SetInt("IsFirstLoad", 0);
         }
         //2.与服务器版本比对，检查是否需要更新，如果需要更新，就下载资源
-
+       
         //2.1 读取本地的fileList.json 
         FileList localFileList = FileList.Load(Application.persistentDataPath + "fileList.json");
         //2.2 下载服务器上的fileList，读取出来，不需要保存到本地，所以可以用WWW
